@@ -1,0 +1,22 @@
+<script> 
+   const name = window.prompt(`What is your name?`);
+   let age = window.prompt("What's your age?");
+  
+    while (isNaN(age)) {
+      window.alert("Insert a valid number");
+      age = window.prompt("What's your age?");
+    }
+    
+    age = Number(age)
+  
+    if (age === 30) {
+      console.log(`${name}, tua idade tá ok`);
+    }
+    if (age > 30) {
+      console.log(`${name}, pessoa velha`);
+    }
+    if (age < 30) {
+      console.log(`${name}, pessoa novinha`);
+    }
+  </script>
+  

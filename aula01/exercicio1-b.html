@@ -1,0 +1,43 @@
+<script> 
+   const name = window.prompt(`What is your name?`);
+   let age = window.prompt("What's your age?");
+   
+  
+    while (isNaN(age)) {
+      window.alert("Insert a valid number");
+      age = window.prompt("What's your age?");
+    }
+    
+    age = Number(age)
+
+   let gender = window.prompt("What's your gender? (F / M / NB)");
+    while (gender !== "F" && gender !== "M" && gender !== "NB" ) {
+      window.alert("Insert a valid gender");
+      gender = window.prompt("What's your gender? (F / M / NB)");
+    }
+
+  
+    if (age === 30) {
+      console.log(`${name}, tua idade tá ok`);
+    }
+    if (age > 30 && gender === "F") {
+      console.log(`${name}, tu é velha`);
+    }
+    if (age > 30 && gender === "M") {
+      console.log(`${name}, tu é velho`);
+    }
+    if (age > 30 && gender === "NB") {
+      console.log(`${name}, tu é velhe`);
+    }
+    if (age < 30 && gender === "F") {
+      console.log(`${name}, tu é novinha`);
+    }
+    if (age < 30 && gender === "M") {
+      console.log(`${name}, tu é novinho`);
+    }
+    if (age < 30 && gender === "NB") {
+      console.log(`${name}, tu é novinhe`);
+    }
+  </script>
+  
+  

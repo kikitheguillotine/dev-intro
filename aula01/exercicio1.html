@@ -1,0 +1,32 @@
+<script>
+    let names;
+    let xisdes;
+  
+    const name = window.prompt(`What is your name?`);
+    let age = askAge();
+  
+    while (isNaN(age)) {
+      if (isNaN(age)) {
+        window.alert("Tu nao sabe digitar tua idade imbecil?");
+      }
+  
+      age = askAge();
+    }
+  
+    console.log(age);
+    console.log(typeof age);
+  
+    if (age === 30) {
+      console.log("ok");
+    }
+    if (age > 30) {
+      console.log("velha");
+    }
+    if (age < 30) {
+      console.log("novinha");
+    }
+  
+    console.log(age);
+  
+    console.log(name);
+  </script>
