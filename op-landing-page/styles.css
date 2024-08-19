@@ -2,20 +2,46 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    box-sizing: border-box;
   }
 
 body {
     font-family: Roboto, sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header-hero a {
+    text-decoration: none;
+    color:#f36b95; 
+}
+
+.header-hero a:visited {
+    color: #f497b4;
+}
+
+.header-hero a:hover {
+    color: rgb(250, 188, 219);
+}
+
+.header-hero {
+    /* border: 2px solid wheat; */
+    display: flex;
+    flex-direction: column;
+    background-color: #445290;
+    align-items:center;
 }
 
 .header {
+    /* border: 2px solid salmon; */
     display: flex;
-    background-color: #1f2937;
-    flex: 0 0 auto;
-    padding: 20px 80px;
+    flex-direction: row;
+    width: 95%;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+    gap: 20px;
+    margin: 20px;
 }
 
 .logo {
@@ -23,14 +49,71 @@ body {
     flex: 0 0 auto;
     color: #F9FAF8;
     font-weight: 900;
-    padding: 0 30px;
 }
 
 .right-links {
     display: flex;
-    flex: 0 0 auto;
+    /* flex: 0 1 auto; */
+    color: #E5E7EB;
+    font-size: 14px;
+    gap: 20px;
+    align-items: center;
+}
+ .right-links .link {
+    text-align: center;
+ }
+
+.hero-container {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    gap: 80px;
+    margin: 20px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    max-width: 45vw;
+    gap: 16px
+}
+
+.hero-right {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: end;
+}
+
+.hero-right img {
+    max-width: 15vw;
+}
+
+.hero-title {
+    color: #F9FAF8;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px #63dda6;
+}
+
+.hero-text {    
     color: #E5E7EB;
     font-size: 18px;
-    gap: 30px;
-    align-items: center;
+    text-align: justify;
+}
+
+.signup {
+    color: #7e56a9;
+    font-weight: 700;
+    align-self: center;
+    padding: 10px;
+    width: 120px;
+    background-color: #f3e383;
+    border-radius: 12px;
+    border-style: hidden;
+}
+
+.signup:hover {
+    background-color: #f2eac0;
 }
