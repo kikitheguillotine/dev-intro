@@ -104,7 +104,7 @@ body {
 }
 
 .signup {
-    color: #7e56a9;
+    color: #445290;
     font-weight: 700;
     align-self: center;
     padding: 10px;
@@ -116,4 +116,46 @@ body {
 
 .signup:hover {
     background-color: #f2eac0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfcf8;
+    align-items: center;
+}
+
+.info-container h1 {
+    color: #445290;
+    padding: 30px 30px 10px;
+}
+
+
+.info-items {
+    display: flex;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+    padding: 30px;
+    /* border: 2px solid red; */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.item img {
+    max-width: 255px;
+    border: 2px solid #445290;
+}
+
+.item p {
+    max-width: 250px;
+    text-align: center;
 }
