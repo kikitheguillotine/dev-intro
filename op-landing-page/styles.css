@@ -26,7 +26,6 @@ body {
 }
 
 .header-hero {
-    /* border: 2px solid wheat; */
     display: flex;
     flex-direction: column;
     background-color: #445290;
@@ -34,7 +33,6 @@ body {
 }
 
 .header {
-    /* border: 2px solid salmon; */
     display: flex;
     flex-direction: row;
     width: 95%;
@@ -53,7 +51,6 @@ body {
 
 .right-links {
     display: flex;
-    /* flex: 0 1 auto; */
     color: #E5E7EB;
     font-size: 14px;
     gap: 20px;
@@ -138,7 +135,6 @@ body {
     justify-content: space-evenly;
     width: 95%;
     padding: 30px;
-    /* border: 2px solid red; */
 }
 
 .item {
@@ -147,15 +143,48 @@ body {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
 }
 
 .item img {
     max-width: 255px;
-    border: 2px solid #445290;
+    border: 2px solid #434343;
 }
 
 .item p {
     max-width: 250px;
     text-align: center;
+    color: #434343;
+}
+
+.quotes-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #445290;
+    /* background-color: #a8ddc5; */
+    padding: 2%;
+    align-items: center;
+    text-align:center;
+}
+
+.quotes-items {
+    color: #F9FAF8;    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: end;
+}
+
+.quotes-items .quote {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.quotes-items .author {
+    align-self: flex-end;
+    max-width: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 10px;
 }
