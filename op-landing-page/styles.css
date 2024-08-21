@@ -12,17 +12,20 @@ body {
     overflow-x: hidden;
 }
 
+.footer a,
 .header-hero a {
     text-decoration: none;
     color:#f36b95; 
 }
 
+.footer a,
 .header-hero a:visited {
     color: #f497b4;
 }
 
+.footer a,
 .header-hero a:hover {
-    color: rgb(250, 188, 219);
+    color: #fabcdb;
 }
 
 .header-hero {
@@ -106,7 +109,7 @@ body {
     align-self: center;
     padding: 10px;
     width: 120px;
-    background-color: #f3e383;
+    background-color: #f497b4;    
     border-radius: 12px;
     border-style: hidden;
 }
@@ -115,6 +118,7 @@ body {
     background-color: #f2eac0;
 }
 
+.cta-container,
 .info-container {
     display: flex;
     flex-direction: column;
@@ -147,7 +151,6 @@ body {
 
 .item img {
     max-width: 255px;
-    border: 2px solid #434343;
 }
 
 .item p {
@@ -160,7 +163,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #445290;
-    /* background-color: #a8ddc5; */
     padding: 2%;
     align-items: center;
     text-align:center;
@@ -187,4 +189,61 @@ body {
     font-weight: 700;
     text-align: right;
     margin-bottom: 10px;
+}
+
+.cta-container {
+    padding: 3%;
+}
+
+.banner {
+    display: flex;
+    gap: 1%;
+    padding: 3%;
+    background-color: #445290;
+    border-radius: 12px;
+    color: #F9FAF8;
+}
+
+.banner button {
+    color: #F9FAF8;
+    font-weight: 700;
+    align-self: center;
+    padding: 7px;
+    width: 150px;
+    background-color: #fa83a9;    
+    border-radius: 15px;
+    border-style: hidden;
+}
+
+.banner button:hover {
+    background-color: #F9FAF8;
+    color: #f497b4;
+}
+
+.banner .left .title {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.footer {
+    color: #E5E7EB  ;
+    padding: 20px 0;
+    background-color: #445290;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color:#21ff9b; 
+    font-weight: 900;
+}
+
+.footer a:visited {
+    color:#21ff9b; 
+    font-weight: 900;
+
+}
+
+.footer a:hover {
+    color:#49dd9b; 
 }
