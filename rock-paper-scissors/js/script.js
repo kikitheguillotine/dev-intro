@@ -25,22 +25,20 @@ function getComputerChoice(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled)
 }
 
-
-function computerChoice() {
-    if (getComputerChoice(1, 4) == 1) {         // find out why if statement isnt working when inside a function
-        console.log("Rock");
+function computerChoice(num) {
+    num = getComputerChoice(1,4)
+    if (num === 1) {        
+        return "Rock"
    }
-   else if (getComputerChoice(1, 4) == 2) {
-        console.log("Paper");
+   else if (num === 2) {
+        return "Paper"
    }
-   else if (getComputerChoice(1, 4) == 3) {
-        console.log("Scissors");
+   else if (num === 3) {
+        return "Scissors"
    }
-
 }
 
-console.log(computerChoice())
-
+console.log(computerChoice())                   
 
 
 
