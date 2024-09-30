@@ -12,7 +12,7 @@
         Return the math.floor() method with the math.random() as a parameter.
             Multiply math.random by the maxFloored const subtracted by the minCeiled const
             Add the minCeiled const.
-    Declare function that  that assigns the getComputerChoice result to rock, paper or scissors using if/else.
+    Declare function that  that assigns the getComputerChoice result to rock, paper or scissors using if/else, and returns the result.
         If getComputerChoice = 1: return rock
         Else if getComputerChoice = 2: return paper
         Else getComputerChoice = 3: return scissors    
@@ -25,7 +25,24 @@ function getComputerChoice(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled)
 }
 
-console.log(getComputerChoice(1, 4))
+
+function computerChoice() {
+    if (getComputerChoice(1, 4) == 1) {         // find out why if statement isnt working when inside a function
+        console.log("Rock");
+   }
+   else if (getComputerChoice(1, 4) == 2) {
+        console.log("Paper");
+   }
+   else if (getComputerChoice(1, 4) == 3) {
+        console.log("Scissors");
+   }
+
+}
+
+console.log(computerChoice())
+
+
+
 
 /* 
 - GET USER CHOICE
